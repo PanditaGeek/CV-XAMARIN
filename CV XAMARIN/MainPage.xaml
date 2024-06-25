@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiCVApp.MainPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Curriculum Vitae" FontSize="24" HorizontalOptions="CenterAndExpand" />
+
+        <Label Text="Nombre:" FontSize="18" />
+        <Label Text="José Alberto" FontSize="18" />
+
+        <Label Text="Apellido:" FontSize="18" />
+        <Label Text="Zegarra Castillo" FontSize="18" />
+
+        <Label Text="Edad:" FontSize="18" />
+        <Label Text="21 años" FontSize="18" />
+
+        <Label Text="Nacionalidad:" FontSize="18" />
+        <Label Text="Peruana" FontSize="18" />
+
+        <Label Text="Carrera Profesional:" FontSize="18" />
+        <Label Text="Ciencia de la Computación" FontSize="18" />
+
+        <Label Text="Habilidades Blandas:" FontSize="18" />
+        <ListView x:Name="HabilidadesBlandasList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
